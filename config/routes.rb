@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'doggo#index'
+  root 'doggos#index'
 end
