@@ -10,24 +10,23 @@
   </head>
 
   <body>
-    <header class='row'>
+  <div id="flex-content-container">
+    <header class="row">
       <div class="col-3">
-        <div class="circle">
-          <br  />
-          Walk doggos
-          <br  />
-          Feed doggos
-          <br  />
-          Babysit doggos
-        </div>
+        <%= link_to root_path, class: 'logo' do %>
+        <%= image_tag 'husky.jpeg', class: 'dog-logo img-fluid' %>
+        <% end %>
       </div>
-      <div class="col-4 slogan">
+      <div class="col col-sm-4 hidden-xs-down slogan">
         Get your friendly neighborhood dog watcher to babysit your pupper
       </div>
-      <div class="col-5 links">
-        <%= link_to 'About Me!', '#' %>
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links float-right">
+        <%= link_to 'About Me!', about_path %>
+        &nbsp;&nbsp;
+        <%= link_to 'Services', service_path %>
       </div>
     </header>
+  </div>
 
     <hr  />
 
@@ -38,9 +37,9 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-6 footer-blurb">
+          <div class="col-12 footer-blurb ">
             Proudly watches dogs in Houston, Tx. <br  />
-            Want me to watch your do? - <%= link_to 'Click Me!', '#', class: 'service-line' %>
+            Want me to watch your do? - <%= link_to 'Click Me!', 'https://www.rover.com/members/diana-t-large-fenced-yard-flexible-hours/', class: 'service-line' %>
           </div>
         </div>
       </div>

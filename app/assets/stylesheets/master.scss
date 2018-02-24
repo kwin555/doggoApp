@@ -1,6 +1,9 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
 
+.about {
+  font-family: 'lato', sans-serif;
+}
 .clear {
   clear: both;
 }
@@ -30,6 +33,11 @@
   padding-top: 26px;
 }
 
+.dog-logo {
+  height: 100px;
+  width:  100px;
+}
+
 .links {
   padding-top: 26px;
 }
@@ -51,6 +59,8 @@ hr {
 
 h1 {
   font-family: "Lato", sans-serif;
+  font-size: 48px;
+  font-weight: bold
 
 }
 
@@ -61,21 +71,17 @@ h2 {
 html {
   position: relative;
   min-height: 100%;
+  height: 100%;
 }
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
+  min-height: 100%;
+  flex-direction: column;
 }
 
 .service-line {
-  color: #f84342;
+  color: #003366;
   font-family: "Lato", sans-serif;
   font-size: 20px;
 
@@ -86,4 +92,17 @@ body {
   font-style: italic;
   text-align: right;
   font-size: 10px;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  display: block;
+  height: 600px;
+  width: 100%;
+  line-height: 1;
 }
